@@ -23,7 +23,7 @@
                 android:id="@+id/txt_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mad_Alarm_Practical"
+                android:text="Mad_Alarm_Practical-8"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_marginTop="40sp"
@@ -57,16 +57,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/txt_alarmtitle1"
+                        android:text="Create Alarm Time"
                         android:padding="15dp"
-                        android:textSize="18sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
                         android:background="?cardBackgroundColor"
                         />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/txt_alarmtitle2"
+                        android:text="By Pressing button.Alarm can be created\nand cancelled"
                         android:paddingStart="15dp"
                         android:paddingEnd="15dp"
                         android:textSize="16sp"
@@ -75,9 +75,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/txt_alarmtitle3"
+                        android:text="Check Current time by looking below real digital\n clock."
                         android:padding="15dp"
-                        android:textSize="14sp"
+                        android:textSize="15sp"
                         android:background="?cardBackgroundColor"
                         />
                     <TextView
@@ -95,7 +95,7 @@
                         android:id="@+id/btncreatealarm"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:icon="@drawable/baseline_add_alarm_24"
+                        app:icon="@drawable/baseline_alarm_add_24"
                         android:text="Create Alarm"
                         android:textSize="16sp"
                         app:iconSize="20dp"
@@ -130,7 +130,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="180dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/img_alarm"
+                        android:src="@drawable/alarm"
                         android:background="?cardBackgroundColor"
                         />
                     <TextView
@@ -155,7 +155,7 @@
                         android:id="@+id/btnCancleAlaram"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:icon="@drawable/baseline_alarm_off_24"
+                        app:icon="@drawable/baseline_alarm_add_24"
                         android:text="Cancel Alarm"
                         android:textSize="16sp"
                         app:iconSize="20dp"

@@ -1,5 +1,4 @@
 package com.mo_husen.mad_pra8_026
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.annotation.SuppressLint
@@ -10,6 +9,10 @@ import android.content.Intent
 import android.view.View
 import android.widget.Toast
 import androidx.core.view.WindowCompat
+import com.mo_husen.mad_pra8_026.databinding.ActivityMainBinding
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -18,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.cardAlarmcreate2.visibility = View.GONE
+        binding.cardAlarmcreate2.visibility = View.GONE  
         binding.btncreatealarm.setOnClickListener() {
             showTimerDialog()
         }
@@ -51,6 +54,7 @@ class MainActivity : AppCompatActivity() {
         binding.cardAlarmcreate2.visibility = View.VISIBLE
         setAlarm(alarmCalendar.timeInMillis, "Start")
     }
+    @SuppressLint("ScheduleExactAlarm")
     private fun setAlarm(millisTime: Long, str: String){
         val intent = Intent(this,AlarmBroadcastReceiver::class.java)
         intent.putExtra("Service1",str)
